@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Preview</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 360px;
+  width: 100%;
+}
+
+.video-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-box img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.video-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  border-radius: 12px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background: rgba(255,0,0,0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.play-btn::before {
+  content: "";
+  border-left: 20px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- klik area mana aja langsung redirect -->
+  <div class="video-box" onclick="window.location.href='https://videykoje.blogspot.com/2026/04/smashing-her-her-bestfriend.html'">
+    
+    <img src="https://cdn.aceimg.com/1b1aa2a23.jpg" alt="thumbnail">
+
+    <div class="play-btn"></div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
